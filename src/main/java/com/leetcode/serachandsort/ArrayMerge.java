@@ -21,7 +21,7 @@ public class ArrayMerge {
 
     
     public static void main(String[] args) {
-        int[] m1={1,2,3,0,0,0};
+        int[] m1={1,2,3};
         int[] m2={2,5,6};
         ArrayMerge am=new ArrayMerge();
         am.merge(m1,3,m2,3);
