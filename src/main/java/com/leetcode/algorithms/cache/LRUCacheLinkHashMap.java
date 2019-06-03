@@ -1,23 +1,23 @@
-package com.leetcode.algorithms.lru;
+package com.leetcode.algorithms.cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class LRUCache<K,V> {
+public class LRUCacheLinkHashMap<K,V> {
 
     private static final float hashLoadFactory = 0.75f;
     private LinkedHashMap<K,V> linkedHashMap;
     private int capacity;
 
 
-    public LRUCache(int capacity){
+    public LRUCacheLinkHashMap(int capacity){
         this.capacity=capacity;
         int size= (int) Math.ceil(capacity/hashLoadFactory);
         linkedHashMap=new LinkedHashMap<K,V>(size,hashLoadFactory,true){
             private static final long serialVersionUID = 1;
             @Override
             protected boolean removeEldestEntry(Map.Entry eldest){
-                return size() > LRUCache.this.capacity;
+                return size() > LRUCacheLinkHashMap.this.capacity;
             }
         };
     }
