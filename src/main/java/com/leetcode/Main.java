@@ -1,11 +1,15 @@
 package com.leetcode;
 
+import com.leetcode.algorithms.arraysearch.BalenceRandomSerach;
+
 public class Main {
     public static void main(String[] args) {
-//        int i=0;
-//        int[] nums={0,1,2,3,4,5};
-//        System.out.println(nums[i++]);
-//        System.out.println(i);
-        System.out.println("");
+        Integer[] ints=new Integer[8];
+        for (int i = 0; i < 8; i++) {
+            ints[i]=i;
+        }
+        BalenceRandomSerach balenceRandomSerach=new BalenceRandomSerach(ints,3);
+        balenceRandomSerach.printBalenceNum();
+
     }
 }

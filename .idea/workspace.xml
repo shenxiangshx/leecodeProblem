@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f1b1883-f800-45a9-90ae-0fc7f062e8f7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/BalenceRandomSerach.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/RandomArraySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/RandomArraySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/algorithms/lru/LRUCache$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/algorithms/lru/LRUCache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/RandomArraySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/leetcode/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/leetcode/algorithms/arraysearch/RandomArraySearch.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +33,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="198">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -47,13 +48,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomArraySearch.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/RandomArraySearch.java">
+      <file leaf-file-name="BalenceRandomSerach.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/BalenceRandomSerach.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="312">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#1139#1140#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1212#1213#0" expanded="true" />
+                <element signature="e#1252#1253#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1665#1666#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,6 +159,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/permutation/ArrayPermutation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/RandomArraySearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leetcode/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/BalenceRandomSerach.java" />
       </list>
     </option>
   </component>
@@ -168,9 +181,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -264,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RandomArraySearch">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ArrayPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.algorithms.permutation.ArrayPermutation" />
       <module name="problem" />
@@ -276,6 +289,28 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="BalenceRandomSerach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.algorithms.arraysearch.BalenceRandomSerach" />
+      <module name="problem" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.algorithms.arraysearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leetcode.Main" />
+      <module name="problem" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leetcode.serachandsort.MergeSort" />
       <module name="problem" />
@@ -283,17 +318,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.leetcode.serachandsort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="RandomArraySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.algorithms.arraysearch.RandomArraySearch" />
-      <module name="problem" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leetcode.algorithms.arraysearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -354,11 +378,13 @@
       <item itemvalue="Application.Sort" />
       <item itemvalue="Application.MergeSort" />
       <item itemvalue="Application.ArrayPermutation" />
-      <item itemvalue="Application.RandomArraySearch" />
+      <item itemvalue="Application.BalenceRandomSerach" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RandomArraySearch" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.BalenceRandomSerach" />
         <item itemvalue="Application.ArrayPermutation" />
         <item itemvalue="Application.MergeSort" />
       </list>
@@ -399,7 +425,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38101000" />
+    <option name="totallyTimeSpent" value="42685000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -420,15 +446,15 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5078684" side_tool="true" visible="true" weight="0.2260274" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50858366" side_tool="true" visible="true" weight="0.2260274" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49213162" visible="true" weight="0.2260274" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4914163" visible="true" weight="0.2260274" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" x="20" y="674" width="1398" height="115" id="Terminal" order="8" sideWeight="0.49570817" weight="0.32739726" />
+      <window_info anchor="bottom" x="20" y="674" width="1398" height="115" id="Terminal" order="8" sideWeight="0.49499285" weight="0.32739726" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49691993" visible="true" weight="0.31759655" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49691993" visible="true" weight="0.31759655" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" sideWeight="0.50308007" side_tool="true" weight="0.2532189" />
@@ -729,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/serch/Serch.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/sort/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -846,12 +865,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/RandomArraySearch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="198">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithms/arraysearch/BalenceRandomSerach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#1665#1666#0" expanded="true" />
           </folding>
         </state>
       </provider>
