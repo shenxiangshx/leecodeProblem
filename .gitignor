@@ -1,0 +1,24 @@
+# Mac
+.DS_Store
+# IDEA
+.idea
+*.iml
+*.eml
+
+# Eclipse
+target
+.classpath
+.project
+.settings
+# Java
+*.class
+
+# Python
+*.pyc
+
+# Others
+*.log
+out
+src/main/resources/global_merged.properties
+src/main/resources/application.properties
+src/main/resources/log4j2.xml
