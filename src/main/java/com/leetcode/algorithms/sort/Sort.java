@@ -50,22 +50,27 @@ public class Sort {
         return a;
     }
 
-//    public Comparable[] quicklySort(Comparable[] arr,int low,int hig){
-//        if (low<hig){
-//            int i = low, j=hig;
-//            Comparable x=arr[low];
-//            while (i<j){
-//                while (i<j&&SortTemplate.less(x,arr[j])){ j--;}
-//                if (i<j) arr[i++]=arr[j];
-//                while (i<j&&SortTemplate.less(arr[i],x)){ i++;}
-//                if (i<j) {arr[j--]=arr[i];}
-//            }
-//            arr[i]=x;
-//            quicklySort(arr,low,i-1);
-//            quicklySort(arr,low+1,hig);
-//        }
-//        return arr;
-//    }
+    public static int[] mergesort(int[] nums, int l, int h){
+        if (l==h){
+            return new int[]{nums[l]};
+        }
+        int mid=(l+(h-1))/2;
+        int[] leftArray=mergesort(nums,l,mid);
+        int[] rightArray=mergesort(nums,mid+1,h);
+        int[] newNUms=new int[leftArray.length+rightArray.length];
+
+        int m = 0, i = 0, j = 0;
+        while (i<leftArray.length&&j<rightArray.length){
+            newNUms[m++]=leftArray[i]<rightArray[j]?leftArray[i++]:rightArray[j++];
+        }
+        while (i<leftArray.length){
+            newNUms[m++]=leftArray[i++];
+        }
+        while (j<rightArray.length){
+            newNUms[m++]=rightArray[j++];
+        }
+        return newNUms;
+    }
 
     public static void main(String[] args) {
         int[] nums={1,6,2,1,9,3};
