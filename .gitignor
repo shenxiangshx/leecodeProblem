@@ -8,7 +8,7 @@
 # Eclipse
 target
 .classpath
-.classess
+classess
 .project
 .settings
 # Java
