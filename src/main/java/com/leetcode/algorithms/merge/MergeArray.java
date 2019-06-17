@@ -1,17 +1,22 @@
-//package com.leetcode.algorithms.merge;
-//
-//public class MergeArray {
-//    public int[] merge(int[] nums1,int[] nums2){
-//        int li=nums1.length;
-//        int lt=nums2.length;
-//        int[] arr=new int[li+lt];
-//        int l=0;
-//        for (int i = 0; i < arr.length; i++) {
-//            if (nums1[i]<nums2[l]&nums1[i]!=0){
-//                arr[i]=nums1[i];
-//            }
-//        }
-//
-//        return ints;
-//    }
-//}
+package com.leetcode.algorithms.merge;
+
+import com.alibaba.fastjson.JSON;
+
+public class MergeArray {
+    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+        int p=(m+n-2) -1;
+        while (m>=0&&n>=0){
+            nums1[p--]=nums1[m]>nums2[n]?nums1[m--]:nums2[n--];
+        }
+        while (n>0){
+            nums1[p--]=nums2[n--];
+        }
+
+    }
+
+    public static void main(String[] args) {
+        int[] a={1,4,6,0,0,0};
+        int[] b=  {1,2,5};
+        MergeArray.merge(a,3,b,2);
+    }
+}

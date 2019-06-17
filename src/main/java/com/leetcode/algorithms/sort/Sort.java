@@ -50,6 +50,13 @@ public class Sort {
         return a;
     }
 
+    /**
+     * 并归排序
+     * @param nums
+     * @param l
+     * @param h
+     * @return
+     */
     public static int[] mergesort(int[] nums, int l, int h){
         if (l==h){
             return new int[]{nums[l]};
