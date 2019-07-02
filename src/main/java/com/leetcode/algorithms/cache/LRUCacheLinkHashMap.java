@@ -45,4 +45,11 @@ public class LRUCacheLinkHashMap<K,V> {
         }
     }
 
+    public static void main(String[] args) {
+        LRUCacheLinkHashMap<Integer,Integer> cacheLinkHashMap = new LRUCacheLinkHashMap(3);
+        cacheLinkHashMap.put(1,1);
+        cacheLinkHashMap.put(2,1);
+        cacheLinkHashMap.put(1,3);
+        cacheLinkHashMap.print();
+    }
 }

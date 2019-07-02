@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ArrayPermute2My {
-    public static List<List<Integer>> permute(int[] nums,int n) {
+    public static List<List<Integer>> permute(Integer[] nums,int n) {
         List<List<Integer>> lists =new ArrayList<>(1);
         Boolean[] booleans =booleans=new Boolean[nums.length];
         Arrays.fill(booleans, true);
@@ -19,7 +19,7 @@ public class ArrayPermute2My {
         return lists;
     }
 
-    private static List<List<Integer>> backtrack(List<List<Integer>> lists,List<Integer> tmpList,int nums[]){
+    private static List<List<Integer>> backtrack(List<List<Integer>> lists,List<Integer> tmpList,Integer nums[]){
         if (tmpList.size()==nums.length){
             lists.add(new ArrayList<>(tmpList));
         }else {
@@ -34,7 +34,7 @@ public class ArrayPermute2My {
         return lists;
     }
 
-    private static List<List<Integer>> backtrack(List<List<Integer>> lists,List<Integer> tmpList,int nums[],Boolean[] booleans){
+    private static List<List<Integer>> backtrack(List<List<Integer>> lists,List<Integer> tmpList,Integer nums[],Boolean[] booleans){
         if (tmpList.size()==nums.length){
             lists.add(new ArrayList<>(tmpList));
         }else {
@@ -53,8 +53,36 @@ public class ArrayPermute2My {
         return lists;
     }
 
+    private static List<List<Integer>> buldArray(int n){
+       int mid=n/2;
+       int mod=n%2;
+        List<Integer> ints=new ArrayList<>();
+        List<List<Integer>> listInts=new ArrayList<>();
+        if (mod==1){
+            ints.add(1);
+        }
+        for (int i = mid-1; i >=0; i--) {
+            ints.add(2);
+        }
+        for (int i = 0; i < mid+mod; i++) {
+            if (ints.get(i)>1){
+                ints.add(1) ;
+            }
+            ints.set(i,1);
+            listInts.add(new ArrayList<>(ints));
+        }
+
+        return listInts;
+    }
+
     public static void main(String[] args) {
-        int[] a={1,1,3};
-        System.out.println(JSON.toJSONString(ArrayPermute2My.permute(a,2)));
+        List<List<Integer>> lists=ArrayPermute2My.buldArray(9);
+        int count=0;
+        for (List<Integer> list : lists) {
+            Integer[] ints = list.toArray(new Integer[]{});
+            System.out.println(JSON.toJSONString(ArrayPermute2My.permute(ints,2)));
+            count+=ArrayPermute2My.permute(ints,2).size();
+        }
+        System.out.println(count);
     }
 }
