@@ -2,12 +2,17 @@ package com.leetcode.algorithms.cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * @author myshenx
+ */
 public class LRUCacheLinkHashMap<K,V> {
 
     private static final float hashLoadFactory = 0.75f;
     private LinkedHashMap<K,V> linkedHashMap;
     private int capacity;
+
 
 
     public LRUCacheLinkHashMap(int capacity){
@@ -42,11 +47,12 @@ public class LRUCacheLinkHashMap<K,V> {
         for (Map.Entry<K, V> entry : linkedHashMap.entrySet()) {
             System.out.print(entry.getKey() + "--"+entry.getValue());
             System.out.println();
+
         }
     }
 
     public static void main(String[] args) {
-        LRUCacheLinkHashMap<Integer,Integer> cacheLinkHashMap = new LRUCacheLinkHashMap(3);
+        LRUCacheLinkHashMap<Integer, Integer> cacheLinkHashMap = new LRUCacheLinkHashMap<>(3);
         cacheLinkHashMap.put(1,1);
         cacheLinkHashMap.put(2,1);
         cacheLinkHashMap.put(1,3);
