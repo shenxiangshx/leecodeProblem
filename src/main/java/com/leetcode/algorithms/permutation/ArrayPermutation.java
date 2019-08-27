@@ -26,6 +26,6 @@ public class ArrayPermutation {
         for (Comparable a:set) {
             System.out.println(i+++" "+a);
         }
-
+        String s="{\"startDate\":\"20190401\",\"movieId\":\"248172\",\"dataType\":\"wish_type\",\"dimList\":\"gender\",\"endDate\":\"20190631\"}";
     }
 }
